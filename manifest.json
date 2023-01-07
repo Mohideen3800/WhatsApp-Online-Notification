@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "WhatsApp Online Notification",
+  "description": "This extension sends a notification when a contact comes online in WhatsApp.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": [
+    "notifications",
+    "activeTab"
+  ]
+}
