@@ -11,13 +11,15 @@ function checkOnlineStatus() {
     if (phoneNumbers.indexOf(phoneNumber) != -1) {
       var status = contact.querySelector("._3LWZl");
       if (status && status.title == "online") {
-        // Send a notification if the contact is online
+        // Send a notification with sound if the contact is online
         var name = contact.querySelector("._1wjpf").title;
-        var notification = new Notification(name + " is online!");
+        var notification = new Notification(name + " is online!", {
+          sound: "notification.mp3"
+        });
       }
     }
   }
 }
 
-// Check the online status every 5 seconds
-setInterval(checkOnlineStatus, 5000);
+// Check the online status every 10 seconds
+setInterval(checkOnlineStatus, 10000);
