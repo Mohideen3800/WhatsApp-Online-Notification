@@ -1,4 +1,4 @@
-var phoneNumbers = ["+918056350207", "+0987654321"]; // Replace with the phone numbers you want to check
+var phoneNumbers = ["+917010930826", "+919840195459"]; // Replace with the phone numbers you want to check
 
 function checkOnlineStatus() {
   // Get the list of contacts from the web page
